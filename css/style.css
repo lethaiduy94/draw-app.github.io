@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+}
+main{
+    margin: auto;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+.color__control{
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+  
+}
+.color__pick{
+    
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+}
+.color__pick:nth-child(1){
+   background-color: red;
+}
+.color__pick:nth-child(2){
+    background-color: yellow;
+ }
+.color__pick:nth-child(3){
+    background-color: orange;
+ }
+.color__pick:nth-child(4){
+    background-color: green;
+ }
+.color__pick:nth-child(5){
+    background-color: blue;
+ }
+.color__pick:nth-child(6){
+    background-color: black;
+ }
+ .color__pick:nth-child(7){
+    background-color: red;
+ }
+ .color__pick:nth-child(8){
+     background-color: yellow;
+  }
+ .color__pick:nth-child(9){
+     background-color: orange;
+  }
+ .color__pick:nth-child(10){
+     background-color: green;
+  }
+ .color__pick:nth-child(11){
+     background-color: blue;
+  }
+ .color__pick:nth-child(12){
+     background-color: black;
+  }
+#draw{
+    
+    border: 1px solid #000;
+    cursor: pointer;
+}
+button,
+#bold,
+#color{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100px;
+    height: 50px;
+}
+#bold{
+    transform: translateX(-200%);
+}
+#color{
+    transform: translateX(-300%);
+}
+#undo{
+    transform: translateX(-100%);
+}
